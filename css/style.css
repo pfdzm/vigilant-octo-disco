@@ -1,31 +1,31 @@
-body {
-  margin: auto;
-  text-align: center;
-  max-width: 600px;
-}
+@media screen {
+  body {
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+  }
 
-a:link {
-  background-color: yellow;
-  font-weight: bolder;
-  color: orangered;
-  
-}
+  a:link {
+    background-color: yellow;
+    font-weight: bolder;
+    color: orangered;
+  }
 
-a:hover,
-a:visited {
-  color: orangered;
-}
+  a:hover,
+  a:visited {
+    color: orangered;
+  }
 
-img {
-  display: block;
-  margin: auto;
-  
-}
+  img {
+    display: block;
+    margin: auto;
+  }
 
-ul li {
-  display: block;
-  list-style: none;
-  margin: 1rem;
-  padding: 0.5rem;
-  border: 2px solid orangered;
+  ul li {
+    display: block;
+    list-style: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid orangered;
+  }
 }
