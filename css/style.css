@@ -7,7 +7,9 @@
   div.grid-wrapper {
     display: grid;
     grid-template-areas: "header header" "bio contact";
-    gap: 0 .5rem;
+    gap: 0 0.5rem;
+    border: 1px solid darkgray;
+    padding: 0 1rem;
   }
   header {
     grid-area: header;
@@ -18,12 +20,41 @@
   section.contact {
     grid-area: contact;
   }
+
+  .two-cols>ul {
+    margin: 0;
+    padding: 0;
+  }
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .contact ul li {
+    flex-grow: 1;
+  }
+  div.two-cols {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+  }
+  ul.labels {
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+  ul.values {
+    text-align: left;
+  }
+
   a:link {
-    background-color: yellow;
     font-weight: bolder;
     color: orangered;
   }
-  a:hover, a:visited {
+  a:hover,
+  a:visited {
     color: orangered;
   }
   img {
@@ -33,8 +64,5 @@
   ul li {
     display: block;
     list-style: none;
-    margin: 1rem;
-    padding: 0.5rem;
-    border: 2px solid orangered;
   }
 }
